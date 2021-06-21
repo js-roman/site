@@ -1,0 +1,43 @@
+.slideContainer {
+    display: flex;
+    height: 80vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar {
+    width: 30%;
+}
+
+.sidemap {
+    height: 100%;
+    border: thin solid black;
+}
+
+.slides {
+    width: 70%;
+}
+
+.slide img {
+    /* height: 100%; */
+}
+
+.slide {
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* background-size: cover; */
+    height: 100%;
+    /* width: 600px; */
+}
+
+#butDown {
+    width: 40px;
+    position: absolute;
+    top: 30%;
+    border-radius: 0 15px;
+}
