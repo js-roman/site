@@ -10,7 +10,7 @@
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-    border: thin solid red;
+    /* border: thin solid red; */
 }
 
 img {
@@ -29,7 +29,7 @@ img {
 
 .sidemap {
     height: 100vh;
-    border: thin solid green;
+    /* border: thin solid green; */
     display: flex;
     flex-direction: column;
     align-items: center;
