@@ -1,5 +1,5 @@
 .fotoPlace {
-    background-image: url("/img/stone_green_background.png");
+    background-image: url("../img/stone_green_background.png");
     background-size: contain;
     height: 80vh;
     width: 98vw;
@@ -14,7 +14,7 @@
     height: 200px;
     margin: 0 10px;
     box-shadow: 4px 4px 6px black;
-    background-image: url("/img/frame.png");
+    background-image: url("../img/frame.png");
     background-size: contain;
     position: relative;
 }
