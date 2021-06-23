@@ -1,0 +1,37 @@
+.fotoPlace {
+    background-image: url("/img/stone_green_background.png");
+    background-size: contain;
+    height: 80vh;
+    width: 98vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+
+.frame {
+    width: 300px;
+    height: 200px;
+    margin: 0 10px;
+    box-shadow: 4px 4px 6px black;
+    background-image: url("/img/frame.png");
+    background-size: contain;
+    position: relative;
+}
+
+.frame:nth-child(2n) {
+    rotate: 2deg;
+}
+
+.frame:nth-child(3n) {
+    rotate: -2deg;
+}
+
+.painting {
+    width: 258px;
+    height: 158px;
+    margin: 21px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

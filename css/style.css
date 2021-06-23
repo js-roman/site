@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 98vw;
+    height: 14vh;
+    /* border: thin solid blue; */
+}
+
+.logo {
+    width: 98vw;
+    height: 10vh;
+    /* border: thin solid black; */
+    text-align: center;
+    background-image: url("/img/background_grass_opacity.png");
+    border-radius: 20px 20px 0 0;
+    /* background-repeat: no-repeat; */
+}
+
+.logo>h1,
+.logo>h2 {
+    font-family: "Arial Black";
+    letter-spacing: 0.6rem;
+    text-shadow: 4px 4px 10px rgb(131, 168, 94);
+}
+
+.logo>h1 {
+    font-size: 3rem;
+    color: rgb(6, 87, 6);
+}
+
+.logo>h2 {
+    font-size: 1.7rem;
+    color: rgb(6, 87, 6);
+    margin-top: -0.7rem;
+}
+
+nav.menu {
+    width: 98vw;
+    height: 4vh;
+    /* border: thin solid red; */
+}
+
+.content {
+    display: flex;
+    width: 98vw;
+    height: 80vh;
+    /* border: 4px solid green; */
+    margin: 0;
+}
+
+footer {
+    width: 98vw;
+    height: 3vh;
+    border-radius: 0 0 20px 20px;
+    background-image: url("/img/background_grass_opacity.png");
+}
