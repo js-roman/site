@@ -69,15 +69,23 @@ iframe {
     top: 40%;
     cursor: pointer;
     z-index: 100;
-    /* border-radius: 0 15px; */
+    border: thin solid gray;
+    background-color: rgb(180, 204, 169);
 }
 
 #butDown {
-    left: 39.5%;
+    left: 40%;
+    border-radius: 0 15px 15px 0;
 }
 
 #butUp {
-    left: 36%;
+    left: 35%;
+    border-radius: 15px 0 0 15px;
+}
+
+#butUp:hover,
+#butDown:hover {
+    background-color: rgb(211, 186, 73);
 }
 
 h4 {

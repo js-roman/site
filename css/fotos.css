@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 30px;
+    position: relative;
 }
 
 .frame {
@@ -17,9 +18,11 @@
     background-image: url("../img/frame.png");
     background-size: contain;
     position: relative;
+    transition: 0.5s ease;
 }
 
-.frame:nth-child(2) {
+
+/* .frame:nth-child(2) {
     rotate: 1deg;
 }
 
@@ -33,7 +36,7 @@
 
 .frame:nth-child(7) {
     rotate: -1deg;
-}
+} */
 
 .painting {
     width: 258px;
@@ -42,4 +45,27 @@
     position: absolute;
     top: 0;
     left: 0;
+    transition: 0.5s ease;
+    /* z-index: -1; */
+}
+
+.big_painting {
+    width: 774px;
+    height: 465px;
+    margin: 63px;
+    rotate: none;
+    z-index: 100;
+    transition: 0.5s ease;
+    /* border: 5px solid wheat; */
+}
+
+.big_frame {
+    rotate: none;
+    width: 900px;
+    height: 600px;
+    transition: 0.5s ease;
+}
+
+.hide {
+    display: none;
 }
