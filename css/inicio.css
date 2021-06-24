@@ -1,0 +1,26 @@
+.imgVitoria {
+    margin: 10px auto;
+    width: 60%;
+    height: 80%;
+}
+
+.imgVitoria>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+}
+
+.content {
+    background-image: url("/img/vitoria_map.jpg");
+    display: block;
+    border: thin solid black;
+}
+
+.text {
+    width: 60%;
+    margin: auto;
+    font-size: 36px;
+    background-color: rgb(180, 204, 169);
+    border-radius: 10px;
+    text-align: center;
+}

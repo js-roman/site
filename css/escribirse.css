@@ -29,24 +29,37 @@ form {
 label {
     display: inline-block;
     width: 8rem;
+    height: 28px;
     text-align: right;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 0 10px;
+    background-color: rgb(204, 223, 185);
+    border-radius: 5px 0 0 5px;
+    box-shadow: 4px 4px 10px black;
 }
 
 input {
     display: inline-block;
     width: 20rem;
+    height: 30px;
     text-align: left;
     font-size: 1.5rem;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 4px 4px 10px black;
 }
 
 input[type="submit"],
 input[type="reset"] {
     width: 8rem;
+    height: 40px;
     text-align: center;
     font-size: 1.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px black;
+    padding: 5px;
 }
 
 .destination {
@@ -110,16 +123,13 @@ h5 {
 
 .available {
     border: 5px solid #8eeda2;
-    border-radius: 15px;
+    border-radius: 50%;
 }
 
 .hanged {
     background: linear-gradient(90deg, #8ff4c2 0%, #8f91f4 100%);
     color: crimson;
 }
-
-
-/* .placeholder {} */
 
 #object1 {
     background-image: url("/img/01.jpg");
@@ -169,6 +179,7 @@ h5 {
 }
 
 p {
+    margin: auto;
     text-align: center;
     margin-top: -10px;
     color: rgb(32, 29, 29);
