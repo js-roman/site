@@ -170,4 +170,6 @@ h5 {
 
 p {
     text-align: center;
+    margin-top: -10px;
+    color: rgb(32, 29, 29);
 }
