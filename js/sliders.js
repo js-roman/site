@@ -8,7 +8,7 @@ window.onload = function() {
     const height = slideContainer.clientHeight;
 
     let activeSlideIndex = 0;
-    sidebar.style.top = `-${(slideCount - 1) * 80}vh`;
+    sidebar.style.top = `-${(slideCount - 1) * 600}px`;
 
     buttonDown.addEventListener("click", () => {
         changeSlide("down");

@@ -1,7 +1,7 @@
 .fotoPlace {
     background-image: url("../img/stone_green_background.png");
     background-size: contain;
-    height: 80vh;
+    height: 600px;
     width: 98vw;
     display: flex;
     flex-wrap: wrap;
@@ -19,12 +19,20 @@
     position: relative;
 }
 
-.frame:nth-child(2n) {
-    rotate: 2deg;
+.frame:nth-child(2) {
+    rotate: 1deg;
 }
 
-.frame:nth-child(3n) {
-    rotate: -2deg;
+.frame:nth-child(3) {
+    rotate: -1deg;
+}
+
+.frame:nth-child(5) {
+    rotate: -0.5deg;
+}
+
+.frame:nth-child(7) {
+    rotate: -1deg;
 }
 
 .painting {

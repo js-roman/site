@@ -11,7 +11,7 @@ form {
     border: thin solid black;
     width: 40rem;
     margin: 20px;
-    height: 30rem;
+    height: 60vh;
     background-color: rgba(200, 200, 200, 0.5);
     display: flex;
     flex-direction: column;
@@ -50,14 +50,19 @@ input[type="reset"] {
 }
 
 .destination {
-    width: 35rem;
-    height: 10rem;
-    border: thin solid black;
-    border-radius: 10px;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 3px solid gold;
+    background-color: gold;
+    box-shadow: 0px 0px 16px orange;
+    margin: auto;
+    font-size: 44px;
+    color: orange;
+    font-weight: bold;
+    position: relative;
+    padding: 0;
 }
 
 .objects {
@@ -84,6 +89,12 @@ h3 {
     text-align: center;
 }
 
+h5 {
+    font-size: 36px;
+    text-align: center;
+    margin: 5px;
+}
+
 .hold {
     border: 5px solid #eee;
 }
@@ -105,4 +116,54 @@ h3 {
 .hanged {
     background: linear-gradient(90deg, #8ff4c2 0%, #8f91f4 100%);
     color: crimson;
+}
+
+
+/* .placeholder {} */
+
+#object1 {
+    background-image: url("/img/01.jpg");
+}
+
+#object2 {
+    background-image: url("/img/02.jpg");
+}
+
+#object3 {
+    background-image: url("/img/03.jpg");
+}
+
+#object4 {
+    background-image: url("/img/04.jpg");
+}
+
+#object5 {
+    background-image: url("/img/05.jpg");
+}
+
+#object6 {
+    background-image: url("/img/06.jpg");
+}
+
+#object7 {
+    background-image: url("/img/07.jpg");
+}
+
+.object {
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: grab;
+}
+
+.inserted {
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 36px orange;
+    border: thin solid wheat;
 }
