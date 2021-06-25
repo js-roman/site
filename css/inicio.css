@@ -11,7 +11,7 @@
 }
 
 .content {
-    background-image: url("/img/vitoria_map.jpg");
+    background-image: url("../img/vitoria_map.jpg");
     display: block;
     border: thin solid black;
 }

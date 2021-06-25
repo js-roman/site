@@ -1,16 +1,17 @@
-.menu ul {
+.menu {
     display: flex;
     /* justify-content: space-around; */
     list-style: none;
     height: 30px;
 }
 
-.menu ul a {
+.menu div {
     /* display: block; */
     border: thin solid black;
     border-radius: 5px;
     height: 30px;
-    flex-grow: 1;
+    width: 25%;
+    /* flex-grow: 1; */
     text-align: center;
     font-weight: bold;
     font-size: 1.4rem;
@@ -19,10 +20,37 @@
     color: black;
 }
 
-a {
-    text-decoration: none;
+.menu div div {
+    width: 100%;
+    border: none;
 }
 
-.menu ul a:hover {
+.menu div div div {
+    border: thin solid black;
+    letter-spacing: 0;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu div:hover {
     background-color: rgb(211, 186, 73);
+}
+
+.menuSecondLevel {
+    position: relative;
+    display: none;
+    z-index: 1;
+}
+
+.menuSecondLevel div {
+    width: 25%;
+}
+
+.menu div:hover .menuSecondLevel {
+    display: inline;
 }

@@ -145,31 +145,31 @@ h5 {
 }
 
 #object1 {
-    background-image: url("/img/01.jpg");
+    background-image: url("../img/01.jpg");
 }
 
 #object2 {
-    background-image: url("/img/02.jpg");
+    background-image: url("../img/02.jpg");
 }
 
 #object3 {
-    background-image: url("/img/03.jpg");
+    background-image: url("../img/03.jpg");
 }
 
 #object4 {
-    background-image: url("/img/04.jpg");
+    background-image: url("../img/04.jpg");
 }
 
 #object5 {
-    background-image: url("/img/05.jpg");
+    background-image: url("../img/05.jpg");
 }
 
 #object6 {
-    background-image: url("/img/06.jpg");
+    background-image: url("../img/06.jpg");
 }
 
 #object7 {
-    background-image: url("/img/07.jpg");
+    background-image: url("../img/07.jpg");
 }
 
 .object {

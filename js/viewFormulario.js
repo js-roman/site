@@ -10,9 +10,9 @@ let progressBars = window.document.getElementsByClassName("progressBar");
 
 function go() {
     validaForm();
-    setTimeout(() => {
-        alert("La transmición de datos al servidor esta fuera de este curso :(");
-    }, 4000);
+    // setTimeout(() => {
+    //     alert("La transmición de datos al servidor esta fuera de este curso :(");
+    // }, 4000);
 }
 
 function animate() {}
@@ -47,7 +47,7 @@ function validaForm() {
             element = "divVal" + campo.id.slice(3);
             window.document
                 .getElementById(element)
-                .setAttribute("src", "/img/" + regExpValidacion(campo) + ".png");
+                .setAttribute("src", "img/" + regExpValidacion(campo) + ".png");
             window.document.getElementById(element).style.display = "inline";
             progressBar.style.display = "none";
         }, delay + DEL);

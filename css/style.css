@@ -20,7 +20,7 @@ header {
     height: 78px;
     /* border: thin solid black; */
     text-align: center;
-    background-image: url("/img/background_grass_opacity.png");
+    background-image: url("../img/background_grass_opacity.png");
     border-radius: 20px 20px 0 0;
     /* background-repeat: no-repeat; */
 }
@@ -61,5 +61,5 @@ footer {
     width: 98vw;
     height: 30px;
     border-radius: 0 0 20px 20px;
-    background-image: url("/img/background_grass_opacity.png");
+    background-image: url("../img/background_grass_opacity.png");
 }

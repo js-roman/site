@@ -10,6 +10,12 @@ window.onload = function() {
     let activeSlideIndex = 0;
     sidebar.style.top = `-${(slideCount - 1) * 600}px`;
 
+    let strGET = window.location.search.replace("?", "");
+    if (strGET != "") activeSlideIndex = strGET.split("=")[1];
+    console.log(activeSlideIndex);
+    slides.style.transform = `translateY(-${activeSlideIndex * height}px)`;
+    sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`;
+
     buttonDown.addEventListener("click", () => {
         changeSlide("down");
     });
