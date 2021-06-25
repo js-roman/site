@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/menu.css">
     <!-- <script src="script.js"></script> -->
     <script src="js/votacion.js"></script>
+    <script src="js/viewFormulario.js"></script>
+    <script src="js/regExp.js"></script>
 
 </head>
 
@@ -48,24 +50,35 @@
                     <h5>Vote el mejore objeto</h5>
                     <p> Para votar hay que introduzir sus datos</p>
                     <div class="input">
-                        <div class="destination placeholder">I</div>
+                        <div class="destination ">I</div>
                     </div>
                     <p class="helpChoice">Arrastre una miniatura aqui</p>
 
-                    <div class="input">
-                        <label for="name">Nombre: </label><input name="name" id="name" type="text">
+                    <div class="input" id="divName">
+                        <label for="name">Nombre: </label>
+                        <input name="name" id="txtName" type="text" class="validable">
+                        <div class="progressBar"></div>
+                        <div class="img"><img class="val" id="divValName" src=""></div>
+
                     </div>
-                    <div class="input">
-                        <label for="email">E-mail: </label><input name="email" id="email" type="text">
+                    <div class="input" id="divEmail">
+                        <label for="email">E-mail: </label>
+                        <input name="email" id="txtEmail" type="text" class="validable">
+                        <div class="progressBar"></div>
+                        <div class="img"><img class="val" id="divValEmail" src=""></div>
+
                     </div>
-                    <div class="input">
-                        <label for="phone">Telefono: </label><input name="phone" id="phone" type="text">
+                    <div class="input" id="divPhone">
+                        <label for="phone">Telefono: </label>
+                        <input name="phone" id="txtPhone" type="text" class="validable">
+                        <div class="progressBar"></div>
+                        <div class="img"><img class="val" id="divValPhone" src=""></div>
                     </div>
 
 
                     <div class="input">
                         <input type="reset" value="Cancelar" onclick="restart()">
-                        <input type="submit" value="Enviar">
+                        <input type="button" value="Enviar" onclick="go()">
                     </div>
 
                 </form>

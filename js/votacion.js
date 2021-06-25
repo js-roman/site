@@ -23,9 +23,17 @@ function restart() {
     cancelChoiceButton.innerHTML = "Arrastre una  miniatura aqui";
     cancelChoiceButton.removeEventListener("click", restart);
     const item = document.querySelector(".inserted");
-    item.classList.remove("inserted");
-    turObjectContainer.append(item);
+    if (item != null) {
+        item.classList.remove("inserted");
+        turObjectContainer.append(item);
+    }
+
     destination.innerHTML = "I";
+    const resImgs = document.querySelectorAll(".val");
+    for (res of resImgs) {
+        res.style.display = "none";
+    }
+
     start();
 }
 
@@ -56,21 +64,15 @@ function dragstart(event) {
 }
 
 function dragend(event) {
-    console.log("dragend");
-    console.log(event.target);
-
     event.target.classList.remove("hold");
     destination.classList.remove("available");
 }
 
 function dragover(event) {
     event.preventDefault();
-    console.log("dragover");
 }
 
 function dragdrop(event) {
-    console.log(event.target);
-
     event.target.classList.remove("hovered");
     document.getElementById(objID).classList.remove("hide");
 
