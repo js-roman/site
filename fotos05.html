@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atractivos turísticos de Vitoria</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/votacion.css">
+    <link rel="stylesheet" href="css/fotos.css">
     <link rel="stylesheet" href="css/menu.css">
     <!-- <script src="script.js"></script> -->
-    <script src="js/votacion.js"></script>
-    <script src="js/viewFormulario.js"></script>
-    <script src="js/regExp.js"></script>
+    <script src="js/fotos.js"></script>
 
 </head>
 
@@ -74,67 +72,19 @@
         </header>
         <div class="content">
             <div class="mainSidebar"></div>
-            <div class="formulario">
-                <form action="">
-                    <h5>Elige el mejore atractivo turístico</h5>
-                    <p> Para votar hay que introduzir sus datos</p>
-                    <div class="input">
-                        <div class="destination ">I</div>
-                    </div>
-                    <p class="helpChoice">Arrastre una miniatura aqui</p>
-
-                    <div class="input" id="divName">
-                        <label for="name">Nombre: </label>
-                        <input name="name" id="txtName" type="text" class="validable">
-                        <div class="progressBar"></div>
-                        <div class="img"><img class="val" id="divValName" src=""></div>
-
-                    </div>
-                    <div class="input" id="divEmail">
-                        <label for="email">E-mail: </label>
-                        <input name="email" id="txtEmail" type="text" class="validable">
-                        <div class="progressBar"></div>
-                        <div class="img"><img class="val" id="divValEmail" src=""></div>
-
-                    </div>
-                    <div class="input" id="divPhone">
-                        <label for="phone">Telefono: </label>
-                        <input name="phone" id="txtPhone" type="text" class="validable">
-                        <div class="progressBar"></div>
-                        <div class="img"><img class="val" id="divValPhone" src=""></div>
-                    </div>
-
-
-                    <div class="input">
-                        <input type="reset" value="Cancelar" onclick="restart()">
-                        <input type="button" value="Enviar" onclick="go()">
-                    </div>
-
-                </form>
-                <div class="objects">
-                    <h3>Arrastre el objeto al formulario</h3>
-                    <div class="object" id="object1" draggable="true" title="Plaza de la Virgen Blanca">
-                    </div>
-                    <div class="object" id="object2" draggable="true" title="Catedral de Santa María<">
-                    </div>
-                    <div class="object" id="object3" draggable="true" title="Plaza de España">
-                    </div>
-                    <div class="object" id="object4" draggable="true" title="Plaza del Machete">
-                    </div>
-                    <div class="object" id="object5" draggable="true" title="Plaza de la Constitución">
-                    </div>
-                    <div class="object" id="object6" draggable="true" title="Edificio de la Diputación Foral de Álava">
-                    </div>
-                    <div class="object" id="object7" draggable="true" title="Basílica de San Prudencio">
-                    </div>
-                </div>
-
+            <div class="fotoPlace">
+                <h3>Plaza de la Constitución</h3>
+                <div class="frame"><img class="painting" src="img/05-01.jpg" alt=""></div>
+                <div class="frame"><img class="painting" src="img/05-02.jpg" alt=""></div>
+                <div class="frame"><img class="painting" src="img/05-03.jpg" alt=""></div>
+                <div class="frame"><img class="painting" src="img/05-04.jpg" alt=""></div>
+                <div class="frame"><img class="painting" src="img/05-05.jpg" alt=""></div>
+                <div class="frame"><img class="painting" src="img/05-06.jpg" alt=""></div>
+                <div class="frame"><img class="painting" src="img/05-07.jpg" alt=""></div>
             </div>
 
         </div>
-
-        <footer>
-        </footer>
+        <footer></footer>
     </main>
 </body>
 

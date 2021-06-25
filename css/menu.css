@@ -30,6 +30,7 @@
     letter-spacing: 0;
     flex-wrap: wrap;
     height: auto;
+    width: 100%;
 }
 
 a {
