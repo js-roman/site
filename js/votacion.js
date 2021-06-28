@@ -19,7 +19,6 @@ window.onload = function() {
 };
 
 function restart() {
-    turObjectContainer.style.display = "inherit";
     cancelChoiceButton.innerHTML = "Arrastre una  miniatura aqui";
     cancelChoiceButton.removeEventListener("click", restart);
     const item = document.querySelector(".inserted");
@@ -27,6 +26,8 @@ function restart() {
         item.classList.remove("inserted");
         turObjectContainer.append(item);
     }
+
+    showSidebar();
 
     destination.innerHTML = "I";
     const resImgs = document.querySelectorAll(".val");
@@ -49,8 +50,7 @@ function finish() {
         turObject.removeEventListener("dragstart", dragstart);
         turObject.removeEventListener("dragend", dragend);
     }
-    document.querySelector(".objects").style.display = "none";
-
+    hideSidebar();
     cancelChoiceButton.innerHTML = "Click aqui para cancelar la votación";
     cancelChoiceButton.addEventListener("click", restart);
     destination.addEventListener("click", restart);
@@ -84,4 +84,22 @@ function dragdrop(event) {
     }
 
     finish();
+}
+
+function hideSidebar() {
+    document.querySelector(".objects h3").style.display = "none";
+    document.querySelector(".objects").style.width = "0";
+    document.querySelector(".objects").style.padding = "0";
+    setTimeout(() => {
+        document.querySelector(".objects").style.display = "none";
+        document.querySelector("form").style.borderRadius = "10px";
+    }, 1000);
+}
+
+function showSidebar() {
+    turObjectContainer.style.display = "inherit";
+    document.querySelector(".objects h3").style.display = "inherit";
+    document.querySelector(".objects").style.width = "10rem";
+    document.querySelector(".objects").style.padding = "5px";
+    document.querySelector("form").style.borderRadius = "10px 0 0 10px";
 }

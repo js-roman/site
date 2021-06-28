@@ -13,13 +13,14 @@
 
 .frame {
     width: 300px;
-    height: 200px;
+    height: 195px;
     margin: 0 10px;
     box-shadow: 4px 4px 6px black;
     background-image: url("../img/frame.png");
     background-size: contain;
     position: relative;
     transition: 0.5s ease;
+    /* border: thin solid red; */
 }
 
 
@@ -63,7 +64,7 @@
 .big_frame {
     rotate: none;
     width: 900px;
-    height: 600px;
+    height: 576px;
     transition: 0.5s ease;
 }
 
