@@ -6,18 +6,20 @@
 
 .mainContainer {
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 header {
     width: 98vw;
-    height: 108px;
+    /* height: 108px; */
+    box-sizing: content-box;
     /* border: thin solid blue; */
 }
 
 .logo {
     width: 98vw;
-    height: 78px;
+    box-sizing: content-box;
+    /* height: 78px; */
     /* border: thin solid black; */
     text-align: center;
     background-image: url("../img/background_grass_opacity.png");
@@ -45,16 +47,14 @@ header {
 
 nav.menu {
     width: 98vw;
-    height: 4vh;
+    box-sizing: content-box;
+    /* height: 4vh; */
     /* border: thin solid red; */
 }
 
 .content {
     display: flex;
     width: 98vw;
-    height: 600px;
-    /* border: 4px solid green; */
-    margin: 0;
 }
 
 footer {
@@ -62,4 +62,10 @@ footer {
     height: 30px;
     border-radius: 0 0 20px 20px;
     background-image: url("../img/background_grass_opacity.png");
+}
+
+@media (max-width: 850px) {
+    .logo>h1 {
+        font-size: 2rem;
+    }
 }
