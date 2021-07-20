@@ -5,19 +5,19 @@
 }
 
 .mainContainer {
-    width: 100vw;
+    /* width: 100vw; */
     /* height: 100vh; */
 }
 
 header {
-    width: 98vw;
+    /* width: 98vw; */
     /* height: 108px; */
     box-sizing: content-box;
     /* border: thin solid blue; */
 }
 
 .logo {
-    width: 98vw;
+    /* width: 98vw; */
     box-sizing: content-box;
     /* height: 78px; */
     /* border: thin solid black; */
@@ -46,7 +46,7 @@ header {
 }
 
 nav.menu {
-    width: 98vw;
+    /* width: 98vw; */
     box-sizing: content-box;
     /* height: 4vh; */
     /* border: thin solid red; */
@@ -54,11 +54,11 @@ nav.menu {
 
 .content {
     display: flex;
-    width: 98vw;
+    /* width: 98vw; */
 }
 
 footer {
-    width: 98vw;
+    /* width: 98vw; */
     height: 30px;
     border-radius: 0 0 20px 20px;
     background-image: url("../img/background_grass_opacity.png");

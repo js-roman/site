@@ -1,8 +1,9 @@
 .fotoPlace {
     background-image: url("../img/stone_green_background.png");
-    background-size: contain;
-    /* height: 600px; */
-    width: 98vw;
+    /* background-size: 100% 100%; */
+    background-repeat: repeat;
+    height: max-content;
+    width: max-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,8 +20,16 @@
     background-image: url("../img/frame.png");
     background-size: contain;
     position: relative;
-    transition: 0.5s ease;
+    /* transition: 0.5s ease; */
     /* border: thin solid red; */
+}
+
+.big_frame {
+    rotate: none;
+    width: 900px;
+    height: 576px;
+    /* transition: 0.5s ease; */
+    position: absolute;
 }
 
 
@@ -47,7 +56,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transition: 0.5s ease;
+    /* transition: 0.5s ease; */
     /* z-index: -1; */
 }
 
@@ -57,19 +66,13 @@
     margin: 63px;
     rotate: none;
     z-index: 100;
-    transition: 0.5s ease;
+    /* transition: 0.5s ease; */
     /* border: 5px solid wheat; */
-}
-
-.big_frame {
-    rotate: none;
-    width: 900px;
-    height: 576px;
-    transition: 0.5s ease;
 }
 
 .hide {
     display: none;
+    /* visibility: hidden; */
 }
 
 h3 {
