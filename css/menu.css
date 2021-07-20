@@ -2,27 +2,30 @@
     display: flex;
     /* justify-content: space-around; */
     list-style: none;
-    height: 30px;
+    /* height: 30px; */
+    height: max-content;
 }
 
 .menu div {
     /* display: block; */
     border: thin solid black;
     border-radius: 5px;
-    height: 30px;
+    /* height: 30px; */
+    /* height: max-content; */
+    height: 100%;
     width: 25%;
     /* flex-grow: 1; */
     text-align: center;
     font-weight: bold;
+    font-style: italic;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
     text-shadow: 1px 1px 4px rgb(6, 87, 6);
-    font-style: italic;
     color: rgb(58, 45, 22);
     /* background-color: rgb(189, 166, 122); */
     background-image: url("/img/koloda.png  ");
     background-size: cover;
-    color: black;
+    z-index: 2;
     /* box-shadow: black 5px 5xp 10xp; */
 }
 

@@ -113,3 +113,12 @@ h3 {
     width: 100%;
     z-index: 1;
 }
+
+@media (max-width: 850px) {
+    .koloda {
+        top: 100px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+}
