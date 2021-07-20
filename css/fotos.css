@@ -76,15 +76,40 @@
 }
 
 h3 {
-    position: absolute;
+    /* position: absolute; */
     padding: 0 40px;
     border-radius: 10px;
-    box-shadow: 4px 4px 10px rgb(6, 87, 6);
-    /* text-shadow: 1px 1px 4px black; */
+    /* box-shadow: 4px 4px 10px rgb(6, 87, 6); */
+    text-shadow: 1px 1px 4px rgb(6, 87, 6);
     ;
     top: 20px;
-    font-size: 50px;
+    font-size: 40px;
     font-style: italic;
-    color: rgb(6, 87, 6);
-    background-color: rgb(180, 204, 169);
+    color: rgb(58, 45, 22);
+    margin: 25px 50px;
+    /* background-color: rgb(180, 204, 169); */
+}
+
+.signboard {
+    background-image: url("/img/title_frame3op.png");
+    background-size: 100% 100%;
+    /* width: 70%; */
+    /* height: 90px; */
+    position: absolute;
+    /* left: 15%; */
+    top: 15px;
+    text-align: center;
+    /* padding: 12px 40px; */
+}
+
+.koloda {
+    background-image: url("/img/koloda.png");
+    /* background-repeat: repeat-x; */
+    background-size: contain;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    height: 15px;
+    width: 100%;
+    z-index: 1;
 }
