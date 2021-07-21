@@ -102,21 +102,9 @@ h3 {
     /* padding: 12px 40px; */
 }
 
-.koloda {
-    background-image: url("/img/koloda.png");
-    /* background-repeat: repeat-x; */
-    background-size: contain;
-    position: absolute;
-    top: 125px;
-    left: 0;
-    height: 15px;
-    width: 100%;
-    z-index: 1;
-}
-
 @media (max-width: 850px) {
     .koloda {
-        top: 100px;
+        /* top: 100px; */
     }
     h3 {
         font-size: 30px;

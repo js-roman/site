@@ -68,9 +68,14 @@ iframe {
     position: absolute;
     top: 40%;
     cursor: pointer;
-    z-index: 100;
+    z-index: 1;
     border: thin solid gray;
-    background-color: rgb(180, 204, 169);
+    /* background-color: rgb(180, 204, 169); */
+    background-image: url("/img/koloda.png");
+    font-size: 80px;
+    padding-left: 10px;
+    text-shadow: 1px 1px 4px rgb(6, 87, 6);
+    color: rgb(58, 45, 22);
 }
 
 #butDown {
@@ -85,7 +90,9 @@ iframe {
 
 #butUp:hover,
 #butDown:hover {
-    background-color: rgb(211, 186, 73);
+    /* background-color: rgb(211, 186, 73); */
+    /* background-image: url("/img/koloda.png"); */
+    color: rgb(85, 77, 63);
 }
 
 h4 {

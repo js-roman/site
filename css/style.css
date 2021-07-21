@@ -64,6 +64,15 @@ footer {
     background-image: url("../img/background_grass_opacity.png");
 }
 
+.koloda {
+    background-image: url("/img/koloda.png");
+    background-size: contain;
+    position: absolute;
+    height: 15px;
+    width: 100%;
+    z-index: 1;
+}
+
 @media (max-width: 850px) {
     .logo>h1 {
         font-size: 2rem;
