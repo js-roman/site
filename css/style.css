@@ -32,18 +32,19 @@ header {
     letter-spacing: 0.6rem;
     /* text-shadow: 1px 1px 4px rgb(6, 87, 6); */
     color: rgb(58, 45, 22);
+    text-shadow: 1px 1px 10px rgb(87, 72, 6);
+    font-style: italic;
 }
 
 .logo>h1 {
-    font-size: 3rem;
-    color: rgb(6, 87, 6);
+    font-size: 40px;
+    /* color: rgb(6, 87, 6); */
 }
 
 .logo>h2 {
-    font-size: 1.7rem;
-    color: rgb(6, 87, 6);
+    font-size: 30px;
+    /* color: rgb(6, 87, 6); */
     margin-top: -0.7rem;
-    font-style: italic;
 }
 
 nav.menu {

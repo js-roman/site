@@ -24,8 +24,9 @@
     font-style: italic;
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
-    /* text-shadow: 1px 1px 4px rgb(6, 87, 6); */
-    color: rgb(58, 45, 22);
+    ;
+    /* text-shadow: 3px 3px 10px rgb(87, 72, 6); */
+    /* color: rgb(58, 45, 22); */
     /* background-color: rgb(189, 166, 122); */
     background-image: url("../img/koloda.png  ");
     background-size: cover;
@@ -59,7 +60,9 @@
 
 a {
     text-decoration: none;
-    color: black;
+    /* color: black; */
+    text-shadow: 3px 3px 10px rgb(87, 72, 6);
+    color: rgb(58, 45, 22);
     display: block;
     width: 100%;
     /* margin: 40px; */
@@ -96,7 +99,7 @@ a {
     }
     .menu div {
         height: 60px;
-        font-size: 1.2rem;
+        font-size: 1.35rem;
     }
 }
 

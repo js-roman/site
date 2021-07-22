@@ -82,7 +82,7 @@ h3 {
     /* box-shadow: 4px 4px 10px rgb(6, 87, 6); */
     font-style: italic;
     color: rgb(58, 45, 22);
-    text-shadow: 1px 1px 4px rgb(6, 87, 6);
+    text-shadow: 1px 1px 10px rgb(87, 72, 6);
     top: 20px;
     font-size: 40px;
     margin: 25px 50px;
@@ -107,5 +107,8 @@ h3 {
     }
     h3 {
         font-size: 30px;
+    }
+    .fotoPlace {
+        padding-top: 130px;
     }
 }

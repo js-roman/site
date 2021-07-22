@@ -74,8 +74,8 @@ iframe {
     /* background-color: rgb(180, 204, 169); */
     background-image: url("../img/koloda.png");
     font-size: 80px;
-    text-shadow: 1px 1px 4px rgb(6, 87, 6);
-    /* color: rgb(58, 45, 22); */
+    /* text-shadow: 1px 1px 4px rgb(6, 87, 6); */
+    color: rgb(58, 45, 22);
     /* text-align: center; */
     text-align: center;
 }
@@ -110,7 +110,7 @@ h4 {
     font-size: 30px;
     font-style: italic;
     color: rgb(58, 45, 22);
-    text-shadow: 1px 1px 4px rgb(6, 87, 6);
+    text-shadow: 1px 1px 10px rgb(87, 72, 6);
     /* position: absolute;
     top: 200px;
     left: 1200px;
