@@ -90,7 +90,7 @@ h3 {
 }
 
 .signboard {
-    background-image: url("/img/title_frame3op.png");
+    background-image: url("../img/title_frame3op.png");
     background-size: 100% 100%;
     /* width: 70%; */
     /* height: 90px; */
