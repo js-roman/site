@@ -74,12 +74,14 @@ iframe {
     /* background-color: rgb(180, 204, 169); */
     background-image: url("/img/koloda.png");
     font-size: 80px;
-    padding-left: 10px;
     text-shadow: 1px 1px 4px rgb(6, 87, 6);
-    color: rgb(58, 45, 22);
+    /* color: rgb(58, 45, 22); */
+    /* text-align: center; */
+    text-align: center;
 }
 
 #butDown {
+    /* left: 40%; */
     left: 40%;
     border-radius: 0 15px 15px 0;
 }
@@ -98,12 +100,13 @@ iframe {
 
 h4 {
     width: 100%;
-    text-align: center;
     /* color: rgb(6, 87, 6); */
     /* background-color: rgb(216, 216, 208); */
     background-image: url("/img/title_frame3op.png");
     background-size: 100% 100%;
-    padding: 20px;
+    margin: 0;
+    padding: 30px;
+    text-align: center;
     font-size: 30px;
     font-style: italic;
     color: rgb(58, 45, 22);
@@ -114,4 +117,19 @@ h4 {
     z-index: 100; */
     /* border: thin solid gray; */
     /* border-radius: 5px; */
+}
+
+@media (max-width: 850px) {
+    .button {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    .button {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 20px;
+    }
 }

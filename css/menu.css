@@ -96,5 +96,16 @@ a {
     }
     .menu div {
         height: 60px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        height: 50px;
+    }
+    .menu div {
+        height: 50px;
+        font-size: 1rem;
     }
 }
