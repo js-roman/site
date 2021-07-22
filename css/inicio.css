@@ -24,7 +24,7 @@
     color: rgb(58, 45, 22);
     padding: 20px;
     margin: auto;
-    font-size: 46px;
+    font-size: 1.7rem;
     font-style: italic;
     box-sizing: content-box;
     font-weight: 900;
@@ -36,6 +36,6 @@
 
 @media (max-width: 850px) {
     .text {
-        font-size: 20px;
+        font-size: 1rem;
     }
 }

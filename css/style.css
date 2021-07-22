@@ -29,9 +29,9 @@ header {
 
 .logo>h1,
 .logo>h2 {
-    font-family: "Arial Black";
     letter-spacing: 0.6rem;
-    text-shadow: 4px 4px 10px rgb(131, 168, 94);
+    /* text-shadow: 1px 1px 4px rgb(6, 87, 6); */
+    color: rgb(58, 45, 22);
 }
 
 .logo>h1 {
@@ -43,6 +43,7 @@ header {
     font-size: 1.7rem;
     color: rgb(6, 87, 6);
     margin-top: -0.7rem;
+    font-style: italic;
 }
 
 nav.menu {
@@ -76,5 +77,8 @@ footer {
 @media (max-width: 850px) {
     .logo>h1 {
         font-size: 2rem;
+    }
+    .logo>h2 {
+        font-size: 1rem;
     }
 }
