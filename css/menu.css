@@ -28,7 +28,7 @@
     /* text-shadow: 3px 3px 10px rgb(87, 72, 6); */
     /* color: rgb(58, 45, 22); */
     /* background-color: rgb(189, 166, 122); */
-    background-image: url("../img/koloda.png  ");
+    background-image: url("../img/koloda2.png  ");
     background-size: cover;
     z-index: 2;
     /* box-shadow: black 5px 5xp 10xp; */
@@ -83,7 +83,7 @@ a {
 
 .menuSecondLevel div {
     width: 25%;
-    background-image: url("../img/koloda.png  ");
+    background-image: url("../img/koloda2.png  ");
     background-size: cover;
     padding: 5px;
 }
