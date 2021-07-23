@@ -65,34 +65,36 @@ iframe {
 }
 
 .button {
-    width: 5%;
     position: absolute;
     top: 40%;
-    cursor: pointer;
+    width: 70px;
     z-index: 1;
     border: thin solid gray;
+    cursor: pointer;
     /* background-color: rgb(180, 204, 169); */
     background-image: url("../img/koloda2.png");
-    font-size: 80px;
+    font-size: 50px;
     text-shadow: 1px 1px 10px rgb(87, 72, 6);
     color: rgb(58, 45, 22);
     /* text-align: center; */
     text-align: center;
+    /* letter-spacing: -15px; */
+    padding-left: 0;
 }
 
-#butDown {
+#butRight {
     /* left: 40%; */
     left: 40%;
     border-radius: 0 15px 15px 0;
 }
 
-#butUp {
-    left: 35%;
+#butLeft {
+    left: calc(40% - 70px);
     border-radius: 15px 0 0 15px;
 }
 
-#butUp:hover,
-#butDown:hover {
+#butLeft:hover,
+#butRight:hover {
     /* background-color: rgb(211, 186, 73); */
     /* background-image: url("/img/koloda.png"); */
     color: rgb(85, 77, 63);
@@ -120,14 +122,23 @@ h4 {
 }
 
 @media (max-width: 850px) {
-    .button {
+    /* .button {
         font-size: 50px;
+        width: 70px;
     }
+    #butLeft {
+        left: calc(40% - 70px);
+    } */
 }
 
 @media (max-width: 550px) {
     .button {
         font-size: 30px;
+        width: 50px;
+        letter-spacing: -5px;
+    }
+    #butLeft {
+        left: calc(40% - 50px);
     }
     h4 {
         font-size: 20px;

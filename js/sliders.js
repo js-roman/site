@@ -1,6 +1,6 @@
 window.onload = function() {
-    const buttonDown = document.getElementById("butDown");
-    const buttonUp = document.getElementById("butUp");
+    const buttonDown = document.getElementById("butLeft");
+    const buttonUp = document.getElementById("butRight");
     const slides = document.querySelector(".slides");
     const sidebar = document.querySelector(".sidebar");
     const slideCount = slides.querySelectorAll("div").length;
