@@ -18,6 +18,8 @@ form {
     justify-content: center;
     align-items: flex-start;
     border-radius: 10px 0 0 10px;
+    border-image: url("../img/koloda2long.png");
+    border-image-width: 15px;
 }
 
 .input {
@@ -63,15 +65,30 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
     position: static;
-    width: 8rem;
-    height: 40px;
+    width: 10rem;
+    height: 3rem;
     text-align: center;
-    font-size: 1.5rem;
     margin-left: 20px;
     margin-right: 20px;
-    border-radius: 5px;
-    box-shadow: 4px 4px 10px black;
+    border-radius: 0 0 0 0;
+    /* box-shadow: 4px 4px 10px black; */
+    border: thin solid black;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-family: unset;
+    letter-spacing: 0.2rem;
+    text-shadow: 3px 3px 10px rgb(87, 72, 6);
+    color: rgb(58, 45, 22);
     padding: 5px;
+    background-image: url(../img/koloda2.png);
+    background-size: cover;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+    font-size: 1.6rem;
 }
 
 .destination {
@@ -111,7 +128,7 @@ input[type="button"] {
     margin: 5px;
 }
 
-h3 {
+h1 {
     text-align: center;
 }
 
@@ -233,4 +250,17 @@ p {
     width: 20px;
     height: 20px;
     display: none;
+}
+
+.signboard {
+    background-image: url("../img/title_frame3op.png");
+    background-size: 100% 100%;
+    /* width: 70%; */
+    /* height: 90px; */
+    position: absolute;
+    /* left: 15%; */
+    top: 15px;
+    text-align: center;
+    padding: 50px;
+    /* padding: 12px 40px; */
 }

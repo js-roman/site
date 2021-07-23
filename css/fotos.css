@@ -5,11 +5,13 @@
     height: max-content;
     width: max-content;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding: 30px;
     padding-top: 100px;
     position: relative;
+    width: calc(100vw - 30px);
 }
 
 .frame {

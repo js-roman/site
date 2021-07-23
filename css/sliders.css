@@ -8,7 +8,7 @@
     position: relative;
     display: flex;
     overflow: hidden;
-    width: 100vw;
+    width: calc(100vw - 30px);
     height: 600px;
     margin-top: 15px;
     /* border: thin solid red; */

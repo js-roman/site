@@ -13,7 +13,7 @@
 .menu>div {
     /* display: block; */
     border: thin solid black;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     /* height: 30px; */
     /* height: max-content; */
     height: 100%;
@@ -71,10 +71,12 @@ a {
 
 .menu div:hover {
     /* background-color: rgb(211, 186, 73); */
+    font-size: 1.6rem;
 }
 
 .menu div.menuSecondLevel {
     position: relative;
+    font-size: 1.5rem;
     /* left: -200px; */
     /* top: 15px; */
     display: none;

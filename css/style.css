@@ -22,13 +22,14 @@ header {
     /* height: 78px; */
     /* border: thin solid black; */
     text-align: center;
-    background-image: url("../img/background_grass_opacity.png");
+    /* background-image: url("../img/background_grass_opacity.png"); */
+    background-image: url("../img/koloda2long.png");
     border-radius: 20px 20px 0 0;
     /* background-repeat: no-repeat; */
 }
 
-.logo>h1,
-.logo>h2 {
+h1,
+h2 {
     letter-spacing: 0.6rem;
     /* text-shadow: 1px 1px 4px rgb(6, 87, 6); */
     color: rgb(58, 45, 22);
@@ -36,12 +37,12 @@ header {
     font-style: italic;
 }
 
-.logo>h1 {
+h1 {
     font-size: 40px;
     /* color: rgb(6, 87, 6); */
 }
 
-.logo>h2 {
+h2 {
     font-size: 30px;
     /* color: rgb(6, 87, 6); */
     margin-top: -0.7rem;
@@ -56,23 +57,43 @@ nav.menu {
 
 .content {
     display: flex;
-    /* width: 98vw; */
+    /* width: 100%; */
 }
 
 footer {
     /* width: 98vw; */
     height: 30px;
     border-radius: 0 0 20px 20px;
-    background-image: url("../img/background_grass_opacity.png");
+    /* background-image: url("../img/background_grass_opacity.png"); */
+    background-image: url("../img/koloda2long.png");
 }
 
 .koloda {
     background-image: url("../img/koloda2long.png");
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     height: 15px;
-    width: 100%;
+    width: 99%;
     z-index: 1;
+}
+
+.middle_zone {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    /* width: 100px; */
+    /* overflow: hidden; */
+    /* border: thick solid green; */
+}
+
+.vert_koloda {
+    background-image: url("../img/koloda2long_vert.png");
+    background-size: contain;
+    /* height: 100%; */
+    width: 1%;
+    z-index: 3;
+    /* border: thick solid red; */
 }
 
 @media (max-width: 850px) {
