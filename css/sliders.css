@@ -106,17 +106,15 @@ h4 {
     /* background-color: rgb(216, 216, 208); */
     background-image: url("../img/title_frame3op.png");
     background-size: 100% 100%;
-    margin: 0;
+    margin-top: -510px;
     padding: 30px;
     text-align: center;
     font-size: 30px;
     font-style: italic;
     color: rgb(58, 45, 22);
     text-shadow: 1px 1px 10px rgb(87, 72, 6);
-    /* position: absolute;
-    top: 200px;
-    left: 1200px;
-    z-index: 100; */
+    position: absolute;
+    z-index: 1;
     /* border: thin solid gray; */
     /* border-radius: 5px; */
 }
