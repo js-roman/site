@@ -1,7 +1,10 @@
-.fotoPlace {
-    background-image: url("../img/stone_green_background.png");
+.content {
+    background-image: url("../img/background_wall3.jpg");
     /* background-size: 100% 100%; */
-    background-repeat: repeat;
+    background-size: contain;
+}
+
+.fotoPlace {
     height: max-content;
     width: max-content;
     display: flex;
@@ -12,6 +15,7 @@
     padding-top: 100px;
     position: relative;
     width: calc(100vw - 30px);
+    background-color: rgba(225, 225, 255, 0.2);
 }
 
 .frame {
@@ -28,7 +32,7 @@
 
 .big_frame {
     rotate: none;
-    width: 900px;
+    width: 890px;
     height: 576px;
     /* transition: 0.5s ease; */
     position: absolute;
@@ -52,9 +56,11 @@
 } */
 
 .painting {
-    width: 258px;
-    height: 158px;
-    margin: 21px;
+    /* width: 258px;
+    height: 158px; */
+    width: 281px;
+    height: 178px;
+    margin: 8px 10px;
     position: absolute;
     top: 0;
     left: 0;
@@ -63,16 +69,16 @@
 }
 
 .big_painting {
-    width: 774px;
-    height: 465px;
-    margin: 63px;
+    width: 836px;
+    height: 530px;
+    margin: 24px 30px;
     rotate: none;
     z-index: 100;
     /* transition: 0.5s ease; */
     /* border: 5px solid wheat; */
 }
 
-.hide {
+< .hide {
     display: none;
     /* visibility: hidden; */
 }
@@ -114,3 +120,5 @@ h3 {
         padding-top: 130px;
     }
 }
+
+<
