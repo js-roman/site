@@ -101,12 +101,14 @@ iframe {
 }
 
 h4 {
-    width: 100%;
+    width: 60%;
+    margin-left: 20%;
     /* color: rgb(6, 87, 6); */
     /* background-color: rgb(216, 216, 208); */
     background-image: url("../img/title_frame3op.png");
     background-size: 100% 100%;
-    margin-top: -510px;
+    top: 15px;
+    /* margin-top: -510px; */
     padding: 30px;
     text-align: center;
     font-size: 30px;
