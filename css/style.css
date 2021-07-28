@@ -1,7 +1,14 @@
+:root {
+    --color_font: rgb(58, 45, 22);
+    --color_shadow: rgb(87, 72, 6);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: var(--color_font);
+    text-shadow: 1px 1px 10px var(--color_shadow);
 }
 
 .mainContainer {
@@ -32,8 +39,6 @@ h1,
 h2 {
     letter-spacing: 0.6rem;
     /* text-shadow: 1px 1px 4px rgb(6, 87, 6); */
-    color: rgb(58, 45, 22);
-    text-shadow: 1px 1px 10px rgb(87, 72, 6);
     font-style: italic;
 }
 
@@ -44,12 +49,10 @@ h1 {
 
 h2 {
     font-size: 30px;
-    /* color: rgb(6, 87, 6); */
     margin-top: -0.7rem;
 }
 
 nav.menu {
-    /* width: 98vw; */
     box-sizing: content-box;
     /* height: 4vh; */
     /* border: thin solid red; */

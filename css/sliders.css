@@ -74,8 +74,8 @@ iframe {
     /* background-color: rgb(180, 204, 169); */
     background-image: url("../img/koloda2.png");
     font-size: 50px;
-    text-shadow: 1px 1px 10px rgb(87, 72, 6);
-    color: rgb(58, 45, 22);
+    text-shadow: 1px 1px 10px var(--color_shadow);
+    color: var(--color_font);
     /* text-align: center; */
     text-align: center;
     /* letter-spacing: -15px; */
@@ -97,7 +97,6 @@ iframe {
 #butRight:hover {
     /* background-color: rgb(211, 186, 73); */
     /* background-image: url("/img/koloda.png"); */
-    color: rgb(85, 77, 63);
 }
 
 h4 {

@@ -20,8 +20,8 @@
 
 .text {
     /* width: max-content; */
-    text-shadow: 1px 1px 4px rgb(6, 87, 6);
-    color: rgb(58, 45, 22);
+    /* text-shadow: 1px 1px 4px rgb(6, 87, 6);
+    color: rgb(58, 45, 22); */
     padding: 20px;
     margin: auto;
     font-size: 1.7rem;

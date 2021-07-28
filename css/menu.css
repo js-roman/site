@@ -61,8 +61,8 @@
 a {
     text-decoration: none;
     /* color: black; */
-    text-shadow: 3px 3px 10px rgb(87, 72, 6);
-    color: rgb(58, 45, 22);
+    /* text-shadow: 3px 3px 10px rgb(87, 72, 6);
+    color: rgb(58, 45, 22); */
     display: block;
     width: 100%;
     /* margin: 40px; */
