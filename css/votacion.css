@@ -1,7 +1,15 @@
+.container {
+    /* margin: 0; */
+    padding: 0;
+    width: 100%;
+    max-width: none;
+    min-width: 540px;
+}
+
 .formulario {
     background-image: url("../img/parchment6_background.jpg");
     background-size: contain;
-    width: 98vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,9 +17,11 @@
 
 form {
     border: thin solid black;
-    width: 40rem;
+    width: max-content;
     margin: 50px 0;
-    height: 60vh;
+    height: 540px;
+    /* height: max-content; */
+    /* min-height: 540px; */
     background-color: rgba(200, 200, 200, 0.5);
     display: flex;
     flex-direction: column;
@@ -20,6 +30,7 @@ form {
     border-radius: 10px 0 0 10px;
     border-image: url("../img/frame.png") 10;
     border-image-width: 15px;
+    padding: 40px;
 }
 
 .input {
@@ -118,8 +129,8 @@ input[type="button"]:hover {
 
 .objects {
     border: thin solid black;
-    width: 10rem;
-    height: 60vh;
+    min-width: 10rem;
+    height: 540px;
     background-color: rgba(200, 200, 200, 0.5);
     display: flex;
     flex-direction: row;
