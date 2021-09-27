@@ -99,11 +99,17 @@ footer {
     /* border: thick solid red; */
 }
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
     .logo>h1 {
-        font-size: 2rem;
+        font-size: 16px;
     }
     .logo>h2 {
-        font-size: 1rem;
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .mainContainer {
+        width: 576px;
     }
 }
