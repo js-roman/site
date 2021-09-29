@@ -110,6 +110,6 @@ footer {
 
 @media (max-width: 576px) {
     .mainContainer {
-        width: 576px;
+        min-width: 300px;
     }
 }
