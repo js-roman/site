@@ -1,4 +1,6 @@
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", sliders, false);
+
+function sliders() {
     const buttonDown = document.getElementById("butLeft");
     const buttonUp = document.getElementById("butRight");
     const slides = document.querySelector(".slides");
@@ -26,6 +28,7 @@ window.onload = function() {
     console.log(activeSlideIndex);
     slides.style.transform = `translateY(-${activeSlideIndex * height}px)`;
     sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`;
+    signboard.innerHTML = lugares[activeSlideIndex];
 
     buttonDown.addEventListener("click", () => {
         changeSlide("down");
@@ -48,4 +51,4 @@ window.onload = function() {
         slides.style.transform = `translateY(-${activeSlideIndex * height}px)`;
         sidebar.style.transform = `translateY(${activeSlideIndex * height}px)`;
     }
-};
+}

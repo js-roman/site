@@ -1,16 +1,20 @@
-let activeSlideIndex = 0;
+document.addEventListener("DOMContentLoaded", menuF, false);
 
-function sliderChoice(slide) {
-    activeSlideIndex = slide;
-}
+function menuF() {
+    let activeSlideIndex = 0;
 
-window.onload = function() {
+    function sliderChoice(slide) {
+        activeSlideIndex = slide;
+    }
+
     const menu_switcher = document.querySelector("#menu_switcher");
     const menu = document.querySelector(".menu");
 
     menu_switcher.addEventListener("click", () => {
+        console.log("клик");
+
         menu.classList.toggle("active");
         // menu_switcher.style.display = "none";
         menu_switcher.classList.toggle("active");
     });
-};
+}

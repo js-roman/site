@@ -1,4 +1,6 @@
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", fotos, false);
+
+function fotos() {
     const paintings = document.querySelectorAll(".painting");
     const frames = document.querySelectorAll(".frame");
     const fotoPlace = document.querySelector(".fotoPlace");
@@ -48,4 +50,4 @@ window.onload = function() {
         mainContainer.style.width = null;
         content.style.width = null;
     }
-};
+}

@@ -130,16 +130,19 @@ h4 {
     } */
 }
 
-@media (max-width: 550px) {
-    .button {
-        font-size: 30px;
-        width: 50px;
-        letter-spacing: -5px;
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
     }
-    #butLeft {
-        left: calc(40% - 50px);
+    .slides {
+        display: none;
+    }
+    .button {
+        display: none;
     }
     h4 {
         font-size: 20px;
     }
 }
+
+@media (max-width: 576px) {}
