@@ -12,8 +12,7 @@
 }
 
 .mainContainer {
-    /* width: 100vw; */
-    /* height: 100vh; */
+    min-width: 300px;
 }
 
 header {
@@ -60,7 +59,7 @@ nav.menu {
 
 .content {
     display: flex;
-    /* width: 100%; */
+    flex: 2;
 }
 
 footer {
@@ -101,7 +100,7 @@ footer {
 
 @media (max-width: 768px) {
     .logo>h1 {
-        font-size: 16px;
+        visibility: hidden;
     }
     .logo>h2 {
         display: none;
