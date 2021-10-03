@@ -36,7 +36,7 @@ function menuF() {
 
     // isMobile.any()
 
-    if (true) {
+    if (isMobile.any()) {
         body.classList.add("touch");
         let arrow = document.querySelectorAll("div.arrow>span");
         console.log(arrow.length);
