@@ -9,6 +9,7 @@ function menuF() {
 
     const menu_switcher = document.querySelector("#menu_switcher");
     const menu = document.querySelector(".menu");
+    const menuSecondLevel = document.querySelectorAll(".openable");
 
     menu_switcher.addEventListener("click", () => {
         console.log("клик");
@@ -16,5 +17,12 @@ function menuF() {
         menu.classList.toggle("active");
         // menu_switcher.style.display = "none";
         menu_switcher.classList.toggle("active");
+    });
+
+    menuSecondLevel.forEach((each) => {
+        each.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.target.parentNode.classList.toggle("opened");
+        });
     });
 }

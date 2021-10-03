@@ -1,108 +1,79 @@
-* {
-    /* border: thin solid green; */
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 .menu {
-    display: flex;
-    /* justify-content: space-around; */
-    list-style: none;
-    height: 30px;
-    /* height: max-content; */
+    height: 60px;
 }
 
-.menu>div {
-    /* display: block; */
-    border: thin solid black;
-    /* border-radius: 5px; */
-    /* height: 30px; */
-    /* height: max-content; */
+.menu a {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    width: 25%;
-    /* flex-grow: 1; */
+    padding: 10px 10px;
+    background-image: url("../img/koloda2.png  ");
+    background-size: cover;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    border: thin solid;
     text-align: center;
+    width: 100%;
+    height: 100%;
     font-weight: bold;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 26px;
     letter-spacing: 0.2rem;
-    ;
-    /* text-shadow: 3px 3px 10px rgb(87, 72, 6); */
-    /* color: rgb(58, 45, 22); */
-    /* background-color: rgb(189, 166, 122); */
-    background-image: url("../img/koloda2.png  ");
-    background-size: cover;
-    z-index: 2;
-    /* box-shadow: black 5px 5xp 10xp; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 }
 
-.menu div div {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* background-image: url("/img/true.png"); */
-    /* background-repeat: repeat; */
-}
-
-.menu div div div {
-    border: thin solid black;
-    letter-spacing: 0;
-    flex-wrap: wrap;
-    height: auto;
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-    /* color: black; */
-    /* text-shadow: 3px 3px 10px rgb(87, 72, 6);
-    color: rgb(58, 45, 22); */
-    display: block;
-    width: 100%;
-    /* margin: 40px; */
-    /* border: thick solid red; */
-    padding: 5px;
-}
-
-.menu div:hover {
-    /* background-color: rgb(211, 186, 73); */
-    font-size: 1.6rem;
-}
-
-.menu div.menuSecondLevel {
-    /* position: relative; */
-    font-size: 1.5rem;
-    /* left: -200px; */
-    /* top: 15px; */
+.sub_menu_list {
     display: none;
-    z-index: 2;
+    /* min-width: 300px; */
+    position: absolute;
+    left: 0;
+    top: 38px;
+    width: 300px;
+    padding: 20px 0px 0px 0px;
+    z-index: 3;
 }
 
-.menuSecondLevel div {
-    width: 25%;
-    background-image: url("../img/koloda2.png  ");
-    background-size: cover;
-    padding: 5px;
+.sub_menu_link {
+    display: inline-block;
 }
 
-.menu div:hover .menuSecondLevel {
-    display: inline;
-    /* margin: -16px; */
+.menu li:hover {
+    font-size: 30px;
 }
 
-@media (max-width: 1006px) {
-    .menu {
-        height: 60px;
+.menu li:hover .sub_menu_list {
+    display: block;
+}
+
+@media (max-width: 1140px) {
+    .menu li {
+        font-size: 20px;
     }
-    .menu div {
-        height: 60px;
-        font-size: 1.35rem;
+    .menu li:hover {
+        font-size: 24px;
     }
 }
 
@@ -114,13 +85,12 @@ a {
         left: 10px;
         height: 30px;
         width: 40px;
-        /* border: thick solid black; */
         z-index: 4;
         cursor: pointer;
         transition: ease 0.5s;
     }
     #menu_switcher.active {
-        left: 150px;
+        /* left: 0px; */
     }
     #menu_switcher>span,
     #menu_switcher>span::before,
@@ -156,43 +126,42 @@ a {
         background-color: rgba(0, 0, 0, 0);
     }
     .menu {
-        /* height: 100%;
-        width: 100%; */
-        width: 150px;
+        width: 100%;
         height: max-content;
         position: absolute;
         top: 30px;
-        left: -150px;
-        flex-direction: column;
+        left: -100%;
         transition: ease 0.5s;
+        z-index: 2;
     }
     .menu.active {
         left: 0;
     }
-    .menu div {
+    .menu_list {
+        flex-direction: column;
+    }
+    .menu li {
+        flex-direction: column;
+    }
+    .sub_menu_list {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 94%;
+        padding: 0;
+    }
+    .menu_link:hover .sub_menu_list {
+        display: block;
+    }
+    .menu a.sub_menu_link {
+        justify-content: left;
+        text-align: left;
+    }
+    /* .menu div {
         font-size: 1rem;
         width: 100%;
         height: 50px;
         /* height: 550px; */
-    }
-    .menuSecondLevel {
-        position: absolute;
-        left: 150px;
-        margin-top: -50px;
-        width: 100%;
-        height: 150px;
-        border: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* background-image: url("/img/true.png"); */
-        /* background-repeat: repeat; */
-    }
-    .menu div:hover {
-        /* background-color: rgb(211, 186, 73); */
-        font-size: 1.1rem;
-    }
 }
 
 @media (max-width: 576px) {
