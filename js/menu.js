@@ -33,31 +33,23 @@ function menuF() {
     let body = document.querySelector("body");
 
     let arrow = document.querySelectorAll(".arrow");
-    // for (i = 0; i < arrow.length; i++) {
-    //     let thisLink = arrow[i].previousElementSibling;
-    //     let subMenu = arrow[i].nextElementSibling;
-    //     let thisArrow = arrow[i];
 
-    //     thisLink.classList.add("parent");
-    //     arrow[i].addEventListener("click", function() {
-    //         subMenu.classList.toggle("open");
-    //         thisArrow.classList.toggle("active");
-    //     });
-    // }
+    // isMobile.any()
 
-    if (isMobile.any()) {
+    if (true) {
         body.classList.add("touch");
-        let arrow = document.querySelectorAll(".arrow");
+        let arrow = document.querySelectorAll("div.arrow>span");
+        console.log(arrow.length);
+
         for (i = 0; i < arrow.length; i++) {
-            let thisLink = arrow[i].previousElementSibling;
-            let subMenu = arrow[i].nextElementSibling;
-            let thisArrow = arrow[i];
+            let thisLink = arrow[i].parentNode.previousElementSibling;
+            let subMenu = arrow[i].parentNode.nextElementSibling;
+            let thisArrow = arrow[i].parentNode;
 
             thisLink.classList.add("parent");
-            arrow[i].addEventListener("click", function() {
+            arrow[i].parentNode.addEventListener("click", function() {
                 subMenu.classList.toggle("open");
                 thisArrow.classList.toggle("active");
-                alert("11");
             });
         }
     } else {

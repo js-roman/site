@@ -72,11 +72,19 @@ body.touch .sub_menu_list.open {
     display: block;
 }
 
-.arrow {
+div.arrow {
     display: none;
     position: absolute;
-    right: 5px;
-    top: 25px;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
+
+div.arrow>span {
+    position: absolute;
+    right: 10px;
+    top: 20px;
     border-top: 10px solid rgb(75, 54, 9);
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
@@ -86,7 +94,7 @@ body.touch .arrow {
     display: inline-block;
 }
 
-.arrow.active {
+div.arrow.active>span {
     transform: rotate(-180deg);
 }
 
