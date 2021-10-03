@@ -8,7 +8,13 @@ function fotos() {
     const content = document.querySelector(".content");
 
     for (painting of paintings) {
-        painting.addEventListener("click", maximize);
+        painting.addEventListener("click", openImg);
+    }
+
+    function openImg(event) {
+        // alert(event.target.src);
+        window.open(event.target.src, "_blank");
+        window.focus();
     }
 
     function maximize(event) {
