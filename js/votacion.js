@@ -16,6 +16,12 @@ window.onload = function() {
 
     destination.addEventListener("dragover", dragover);
     destination.addEventListener("drop", dragdrop);
+
+    if (isMobile.any()) {
+        body.classList.add("touch");
+    } else {
+        body.classList.add("mouse");
+    }
 };
 
 function restart() {

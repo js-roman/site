@@ -108,6 +108,9 @@ div.arrow.active>span {
 }
 
 @media (max-width: 768px) {
+    header {
+        height: 20px;
+    }
     #menu_switcher {
         display: block;
         position: absolute;
@@ -189,15 +192,5 @@ div.arrow.active>span {
     .menu a.sub_menu_link {
         justify-content: left;
         text-align: left;
-    }
-}
-
-@media (max-width: 576px) {
-    #menu_switcher {
-        top: 5px;
-        left: 10px;
-    }
-    h1 {
-        visibility: hidden;
     }
 }

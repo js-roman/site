@@ -39,7 +39,6 @@ function menuF() {
     if (isMobile.any()) {
         body.classList.add("touch");
         let arrow = document.querySelectorAll("div.arrow>span");
-        console.log(arrow.length);
 
         for (i = 0; i < arrow.length; i++) {
             let thisLink = arrow[i].parentNode.previousElementSibling;

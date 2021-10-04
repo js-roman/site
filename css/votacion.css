@@ -111,7 +111,7 @@ input[type="button"]:hover {
     font-size: 1.6rem;
 }
 
-.destination {
+body.mouse .destination {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -125,6 +125,23 @@ input[type="button"]:hover {
     font-weight: bold;
     position: relative;
     padding: 0;
+}
+
+body.mouse .destination>select {
+    display: none;
+}
+
+body.touch .destination>select {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 14px;
+    font-family: unset;
+    text-shadow: 3px 3px 10px rgb(87, 72, 6);
+    color: rgb(58, 45, 22);
+}
+
+body.touch .destination>span {
+    display: none;
 }
 
 .objects {
@@ -308,4 +325,16 @@ p {
     text-align: center;
     padding: 50px;
     /* padding: 12px 40px; */
+}
+
+body.touch .objects {
+    display: none;
+}
+
+body.touch p.helpChoiceMouse {
+    display: none;
+}
+
+body.mouse p.helpChoiceTouch {
+    display: none;
 }
