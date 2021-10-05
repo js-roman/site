@@ -18,7 +18,7 @@ function restart() {
     destination.innerHTML = "I";
     const resImgs = document.querySelectorAll(".val");
     for (res of resImgs) {
-        res.style.display = "none";
+        res.removeAttribute("src");
     }
 
     start();

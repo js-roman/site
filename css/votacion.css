@@ -42,20 +42,18 @@ form {
 
 label {
     display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 30px;
     width: 160px;
     height: 28px;
-    text-align: right;
+    text-align: left;
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 0 10px;
-    /* background-color: rgb(202, 175, 133); */
     background-image: url(../img/koloda2.png);
     background-size: cover;
     border-radius: 5px 0 0 5px;
     box-shadow: 4px 4px 10px black;
-    position: absolute;
-    left: 30px;
-    top: 2px;
     font-weight: bold;
     font-style: italic;
     font-size: 1.5rem;
@@ -63,7 +61,7 @@ label {
     letter-spacing: 0.2rem;
     text-shadow: 3px 3px 10px rgb(87, 72, 6);
     color: rgb(58, 45, 22);
-    /* border: thin solid red; */
+    padding: 0 10px;
 }
 
 input {
@@ -133,10 +131,12 @@ body.mouse .destination>select {
 body.touch .destination>select {
     font-weight: bold;
     font-style: italic;
-    font-size: 14px;
+    font-size: 18px;
     font-family: unset;
     text-shadow: 3px 3px 10px rgb(87, 72, 6);
     color: rgb(58, 45, 22);
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px black;
 }
 
 body.touch .destination>span {
@@ -377,8 +377,9 @@ body.mouse p.helpChoiceTouch {
     input[type="reset"],
     input[type="button"] {
         width: 130px;
-        height: 30px;
+        height: 40px;
         font-size: 20px;
+        padding: 5px;
     }
     input[type="reset"] {
         margin: 20px;

@@ -1,6 +1,6 @@
 const DEL = 1000;
-let elements = window.document.getElementsByClassName("validable");
-let progressBars = window.document.getElementsByClassName("progressBar");
+const elements = window.document.getElementsByClassName("validable");
+const progressBars = window.document.getElementsByClassName("progressBar");
 const progressBarWrappers =
     window.document.getElementsByClassName("progressBarWrapper");
 
@@ -37,7 +37,6 @@ function validaForm() {
     }
 
     function waitBar(delay, progressBar) {
-        console.log(progressBarWrappers.length);
         for (element of progressBarWrappers) {
             element.style.overflow = "hidden";
         }
