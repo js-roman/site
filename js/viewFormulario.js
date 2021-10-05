@@ -1,6 +1,8 @@
 const DEL = 1000;
 let elements = window.document.getElementsByClassName("validable");
 let progressBars = window.document.getElementsByClassName("progressBar");
+const progressBarWrappers =
+    window.document.getElementsByClassName("progressBarWrapper");
 
 // window.onload = function() {
 //     for (const el of elements) {
@@ -18,8 +20,6 @@ function go() {
 function animate() {}
 
 function validaForm() {
-    console.log("111");
-
     let delay = 0;
 
     for (campo of elements) {
@@ -29,7 +29,7 @@ function validaForm() {
     for (let i = 0; i < progressBars.length; i++) {
         let progressBar = progressBars[i];
         progressBar.style.display = "inline-block";
-        progressBar.style.width = "0%";
+        progressBar.classList.add("width0");
         let campo = elements[i];
         delay = i * DEL;
         waitBar(delay, progressBar);
@@ -37,8 +37,14 @@ function validaForm() {
     }
 
     function waitBar(delay, progressBar) {
+        console.log(progressBarWrappers.length);
+        for (element of progressBarWrappers) {
+            element.style.overflow = "hidden";
+        }
+
         setTimeout(() => {
-            progressBar.style.width = "25rem";
+            progressBar.classList.remove("width0");
+            progressBar.classList.add("width25rem");
         }, delay);
     }
 
@@ -50,6 +56,8 @@ function validaForm() {
                 .setAttribute("src", "img/" + regExpValidacion(campo) + ".png");
             window.document.getElementById(element).style.display = "inline";
             progressBar.style.display = "none";
+            progressBar.classList.remove("width25rem");
+            progressBar.parentNode.style.overflow = "visible";
         }, delay + DEL);
     }
 }

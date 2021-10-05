@@ -52,7 +52,7 @@ function menuF() {
             });
         }
     } else {
-        body.classList.add("mouse");
+        // body.classList.add("mouse");
     }
 
     function sliderChoice(slide) {

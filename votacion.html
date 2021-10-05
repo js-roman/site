@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atractivos turísticos de Vitoria</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap-grid.css" rel="stylesheet"> -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/votacion.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body class="touch">
     <main class="container">
         <div class="row">
             <header>
@@ -81,7 +81,7 @@
         <div class="middle_zone row">
             <!-- <div class="vert_koloda"></div> -->
             <div class="content">
-                <!-- <div class="koloda"></div> -->
+                <div class="koloda"></div>
                 <div class="mainSidebar"></div>
                 <div class="formulario">
                     <form action="">
@@ -107,23 +107,32 @@
 
                         <div class="input" id="divName">
                             <label for="name">Nombre: </label>
-                            <input name="name" id="txtName" type="text" class="validable">
-                            <div class="progressBar"></div>
-                            <div class="img"><img class="val" id="divValName" src=""></div>
+                            <div class="progressBarWrapper">
+                                <input name="name" id="txtName" type="text" class="validable">
+                                <div class="progressBar"></div>
+                                <div class="img"><img class="val" id="divValName" src=""></div>
+                            </div>
+
 
                         </div>
                         <div class="input" id="divEmail">
                             <label for="email">E-mail: </label>
-                            <input name="email" id="txtEmail" type="text" class="validable">
-                            <div class="progressBar"></div>
-                            <div class="img"><img class="val" id="divValEmail" src=""></div>
+                            <div class="progressBarWrapper">
+                                <input name="email" id="txtEmail" type="text" class="validable">
+                                <div class="progressBar"></div>
+                                <div class="img"><img class="val" id="divValEmail" src=""></div>
+                            </div>
+
 
                         </div>
                         <div class="input" id="divPhone">
                             <label for="phone">Telefono: </label>
-                            <input name="phone" id="txtPhone" type="text" class="validable">
-                            <div class="progressBar"></div>
-                            <div class="img"><img class="val" id="divValPhone" src=""></div>
+                            <div class="progressBarWrapper">
+                                <input name="phone" id="txtPhone" type="text" class="validable">
+                                <div class="progressBar"></div>
+                                <div class="img"><img class="val" id="divValPhone" src=""></div>
+                            </div>
+
                         </div>
 
 

@@ -4,26 +4,6 @@ let cancelChoiceButtonl;
 let destination;
 let placeholders;
 
-window.onload = function() {
-    turObjects = document.querySelectorAll(".object");
-    turObjectContainer = document.querySelector(".objects");
-    cancelChoiceButton = document.querySelector(".helpChoice");
-    destination = document.querySelector(".destination");
-    placeholders = document.querySelectorAll(".placeholder");
-
-    let objID;
-    start();
-
-    destination.addEventListener("dragover", dragover);
-    destination.addEventListener("drop", dragdrop);
-
-    if (isMobile.any()) {
-        body.classList.add("touch");
-    } else {
-        body.classList.add("mouse");
-    }
-};
-
 function restart() {
     cancelChoiceButton.innerHTML = "Arrastre una  miniatura aqui";
     cancelChoiceButton.removeEventListener("click", restart);
