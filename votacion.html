@@ -6,8 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atractivos turísticos de Vitoria</title>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap-grid.css" rel="stylesheet"> -->
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/votacion.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -16,14 +14,14 @@
     <script src="js/menu.js"></script>
     <script src="js/viewFormulario.js"></script>
     <script src="js/regExp.js"></script>
-    <script src="site/js/votacion.js"></script>
+    <!-- <script src="site/js/votacion.js"></script>
     <script src="site/js/menu.js"></script>
     <script src="site/js/viewFormulario.js"></script>
-    <script src="site/js/regExp.js"></script>
+    <script src="site/js/regExp.js"></script> -->
 
 </head>
 
-<body class="mouse">
+<body>
     <main class="container">
         <div class="row">
             <header>
@@ -91,7 +89,7 @@
                         <!-- </div> -->
                         <div class="input">
                             <div class="destination"><span>I</span>
-                                <select name="" id="">
+                                <select name="" id="choice">
                                 <option value="Plaza de la Virgen Blanca">Plaza de la Virgen Blanca</option>
                                 <option value="Catedral de Santa María">Catedral de Santa María</option>
                                 <option value="Plaza de España">Plaza de España</option>
@@ -137,8 +135,8 @@
 
 
                         <div class="input">
-                            <input type="reset" value="Cancelar" onclick="clearAll()">
-                            <input type="button" value="Enviar" onclick="go()">
+                            <input type="button" id="reset" value="Cancelar">
+                            <input type="button" id="send" value="Enviar" onclick="go()">
                         </div>
 
                     </form>

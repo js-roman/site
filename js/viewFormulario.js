@@ -17,6 +17,10 @@ function go() {
     // }, 4000);
 }
 
+// function restart() {
+//     alert("сука падла блядь");
+// }
+
 function animate() {}
 
 function validaForm() {
