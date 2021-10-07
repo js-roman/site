@@ -60,8 +60,14 @@
     display: inline-block;
 }
 
-.menu li:hover {
-    font-size: 30px;
+.menu_link:hover,
+.sub_menu_link:hover {
+    text-decoration: underline;
+}
+
+body.touch .menu_link:hover,
+body.touch .sub_menu_link:hover {
+    text-decoration: none;
 }
 
 body.mouse .menu li:hover .sub_menu_list {
@@ -102,8 +108,8 @@ div.arrow.active>span {
     .menu li {
         font-size: 20px;
     }
-    .menu li:hover {
-        font-size: 24px;
+    .menu>li:hover {
+        text-decoration: underline;
     }
 }
 
