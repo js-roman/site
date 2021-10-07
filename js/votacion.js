@@ -17,12 +17,16 @@ function votation() {
     function restart() {
         if (body.classList.contains("mouse")) {
             cancelChoiceButton.innerHTML = "Arrastre una  miniatura aqui";
-            destination.innerHTML = "<span>I</span>";
-            const item = document.querySelector(".inserted");
+
+            let item = document.querySelector(".inserted");
+            console.log(item);
             if (item != null) {
-                item.classList.remove("inserted");
-                turObjectContainer.append(item);
+                item.parentNode.removeChild(item);
+
+                // item.classList.remove("inserted");
+                // turObjectContainer.append(item);
             }
+            destination.innerHTML = "<span>I</span>";
             showSidebar();
         } else {
             document.querySelector("#choice").selectedIndex = 0;
@@ -35,6 +39,10 @@ function votation() {
             res.removeAttribute("src");
             res.style.display = "none";
         }
+
+        document.querySelector("#txtName").value = "";
+        document.querySelector("#txtEmail").value = "";
+        document.querySelector("#txtPhone").value = "";
 
         start();
     }
@@ -75,11 +83,15 @@ function votation() {
 
     function dragdrop(event) {
         event.target.classList.remove("hovered");
-        document.getElementById(objID).classList.remove("hide");
 
-        event.target.append(document.getElementById(objID));
-        document.getElementById(objID).classList.add("inserted");
-        document.getElementById(objID).classList.remove("hold");
+        item = document.getElementById(objID);
+        itemDup = item.cloneNode(true);
+        console.log(item);
+
+        event.target.append(itemDup);
+        itemDup.classList.add("inserted");
+        itemDup.classList.remove("hold");
+        item.classList.remove("hold");
         for (placeholder of placeholders) {
             placeholder.classList.remove("available");
         }
@@ -88,9 +100,10 @@ function votation() {
     }
 
     function hideSidebar() {
-        document.querySelector(".objects h3").style.display = "none";
         document.querySelector(".objects").style.width = "0";
         document.querySelector(".objects").style.padding = "0";
+        // document.querySelector(".objects h3").style.visibility = "hidden";
+        document.querySelector(".objects h3").style.width = "0";
         setTimeout(() => {
             document.querySelector(".objects").style.display = "none";
             document.querySelector("form").style.borderRadius = "10px";
@@ -99,8 +112,9 @@ function votation() {
 
     function showSidebar() {
         turObjectContainer.style.display = "inherit";
-        document.querySelector(".objects h3").style.display = "inherit";
-        document.querySelector(".objects").style.width = "10rem";
+        // document.querySelector(".objects h3").style.visibility = "visible";
+        document.querySelector(".objects h3").style.width = "150px";
+        document.querySelector(".objects").style.width = "250px";
         document.querySelector(".objects").style.padding = "5px";
         document.querySelector("form").style.borderRadius = "10px 0 0 10px";
     }
