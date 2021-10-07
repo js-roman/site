@@ -31,8 +31,15 @@ function menuF() {
     };
 
     let body = document.querySelector("body");
-
     let arrow = document.querySelectorAll(".arrow");
+    const close = document.querySelector(".close");
+    if (!sessionStorage.getItem("visited")) {
+        document.querySelector(".description").style.display = "block";
+    }
+    close.addEventListener("click", () => {
+        sessionStorage.setItem("visited", "true");
+        document.querySelector(".description").style.display = "none";
+    });
 
     // isMobile.any()
 
