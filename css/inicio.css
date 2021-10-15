@@ -38,8 +38,8 @@
     display: none;
     position: absolute;
     top: 20%;
-    left: calc( 50% - 200px);
-    width: 400px;
+    left: 10%;
+    width: 80%;
     background-color: rgb(219, 123, 123);
     border: thin violet;
     box-shadow: 10px 15px 25px rgb(76, 88, 88);
